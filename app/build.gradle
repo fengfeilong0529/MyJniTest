@@ -10,14 +10,14 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-//        ndk{
-//            moduleName "helloworld"
-//            ldLibs "log"
-//            abiFilters "armeabi"
-//
-//            stl "gnustl_shared"
-//            cFlags "-IE:/Android_NDK/android-ndk-r11b/sources/cxx-stl/gnu-libstdc++/4.9/include"
-//        }
+        ndk{
+            moduleName "helloworld"
+            ldLibs "log"
+            abiFilters "armeabi"
+
+            stl "gnustl_shared"
+            cFlags "-IE:/Android_NDK/android-ndk-r11b/sources/cxx-stl/gnu-libstdc++/4.9/include"
+        }
     }
     buildTypes {
         release {
@@ -25,11 +25,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-//    externalNativeBuild {
-//        ndkBuild {
-//            path 'src/main/jni/Android.mk'
-//        }
-//    }
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
 }
 
 dependencies {
