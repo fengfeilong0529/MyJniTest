@@ -3,7 +3,7 @@
 ## 步骤：
 ### 1、在某一需要的类中，定义native方法
 ![](https://github.com/fengfeilong0529/MyJniTest/blob/master/jni_pics/1.png)
-### 2、然后用javah快捷方式生成对应的.h文件，路径在src/main/jni中
+### 2、然后用javah快捷方式生成对应的.h文件，路径在src/main/jni中(Android.mk文件参考工程中Android.mk文件即可)
 ![](https://github.com/fengfeilong0529/MyJniTest/blob/master/jni_pics/2.png) 
 ![](https://github.com/fengfeilong0529/MyJniTest/blob/master/jni_pics/3.png)
 ### 3、在jni文件夹中定义.c文件，实现.h中的方法
