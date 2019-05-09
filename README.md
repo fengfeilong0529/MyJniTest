@@ -16,7 +16,7 @@
 ### 6、最后，在需要的类中调用native方法即可
 ![](https://github.com/fengfeilong0529/MyJniTest/blob/master/jni_pics/7.png)
 ---
-### External tool配置：
+### External Tools配置（Settings -> Tools -> External Tools）：
 - javah：
    - Program：$JDKPath$\bin\javah.exe
    - Arguments：-classpath . -jni -d $ModuleFileDir$/src/main/jni $FileClass$
